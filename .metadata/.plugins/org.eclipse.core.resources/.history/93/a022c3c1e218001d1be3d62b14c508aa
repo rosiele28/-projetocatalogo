@@ -1,0 +1,5 @@
+package com.projeto.dscatalog.repositories;
+
+public interface CategoryRepository {
+
+}
