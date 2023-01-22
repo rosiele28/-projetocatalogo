@@ -1,9 +1,0 @@
-package com.projeto.dscatalog.dto;
-
-public class CategoryDTO {
-	private long id;
-	private String nome;
-	
-	
-
-}
