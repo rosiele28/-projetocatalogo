@@ -1,0 +1,5 @@
+package com.projeto.dscatalog.services.exceptions;
+
+public class EntityNotFoundException {
+
+}

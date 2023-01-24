@@ -1,0 +1,5 @@
+package com.projeto.dscatalog.resources.exceptions;
+
+public class ResourceExecptionHandler {
+
+}
