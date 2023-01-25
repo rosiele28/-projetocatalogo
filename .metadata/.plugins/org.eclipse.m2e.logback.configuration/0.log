@@ -2021,3 +2021,31 @@
 2023-01-23 21:25:01,745 [Worker-29: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-01-23 21:25:01,745 [Worker-29: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2023-01-23 21:25:01,745 [Worker-29: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rosiele/projetos/dsCatalog/backend/src/test/resources
+2023-01-25 11:18:58,467 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-25 11:18:58,468 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-25 11:18:58,470 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-01-25 11:18:58,504 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-25 11:18:58,506 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-25 11:18:58,507 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-25 11:18:58,507 [Worker-65: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rosiele/projetos/dsCatalog/backend/src/test/resources
+2023-01-25 12:33:37,078 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-25 12:33:37,083 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-25 12:33:37,094 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-01-25 12:33:37,418 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-25 12:33:37,422 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-25 12:33:37,422 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-25 12:33:37,422 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rosiele/projetos/dsCatalog/backend/src/test/resources
+2023-01-25 12:38:01,429 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-25 12:38:01,429 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-25 12:38:01,430 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-01-25 12:38:01,490 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-25 12:38:01,495 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-25 12:38:01,495 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-25 12:38:01,495 [Worker-72: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rosiele/projetos/dsCatalog/backend/src/test/resources
+2023-01-25 20:40:10,393 [Worker-84: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-25 20:40:10,394 [Worker-84: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-25 20:40:10,403 [Worker-84: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2023-01-25 20:40:10,670 [Worker-84: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2023-01-25 20:40:10,674 [Worker-84: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2023-01-25 20:40:10,676 [Worker-84: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2023-01-25 20:40:10,677 [Worker-84: Launching backend - DscatalogApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /home/rosiele/projetos/dsCatalog/backend/src/test/resources
