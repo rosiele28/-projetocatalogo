@@ -31,3 +31,9 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# ignora os arquivos com extensões 
+.gitignore
+# ignora quaisquer diretórios chamados "metadata"
+.metadata/
+.recommenders/
