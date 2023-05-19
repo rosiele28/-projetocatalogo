@@ -23,12 +23,12 @@ public class Product implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private String name;
 	
 	@Column(columnDefinition = "TEXT")
 	private String description;
-	private double price;
+	private Double price;
 	private String imgUrl;
 	
 	
@@ -42,6 +42,14 @@ public class Product implements Serializable {
 			
 	Set<Category> categories = new HashSet<>();
 	
+	public Set<Category> getCategories() {
+		return categories;
+	}
+
+	public void setCategories(Set<Category> categories) {
+		this.categories = categories;
+	}
+
 	public Product() {
 		
 	}
@@ -82,6 +90,14 @@ public class Product implements Serializable {
 	public void setPrice(double price) {
 		this.price = price;
 	}
+	public Instant getDate() {
+		return date;
+	}
+
+	public void setDate(Instant date) {
+		this.date = date;
+	}
+
 	public String getImgUrl() {
 		return imgUrl;
 	}
@@ -105,6 +121,7 @@ public class Product implements Serializable {
 		Product other = (Product) obj;
 		return id == other.id;
 	}
+
 	
 	
 
