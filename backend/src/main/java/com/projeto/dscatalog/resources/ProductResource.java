@@ -26,7 +26,7 @@ import com.projeto.dscatalog.services.ProductService;
 public class ProductResource {
 
 	@Autowired
-	private ProductService service;
+	private ProductService service; //teste
 
 	@GetMapping 
 	public ResponseEntity<Page<ProductDTO>> findAll(
