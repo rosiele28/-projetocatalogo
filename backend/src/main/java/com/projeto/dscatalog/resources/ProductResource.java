@@ -28,7 +28,7 @@ public class ProductResource {
 	@Autowired
 	private ProductService service;
 
-	@GetMapping /* webservice para responder todas as categorias do banco de  dados */ 
+	@GetMapping 
 	public ResponseEntity<Page<ProductDTO>> findAll(
 			@RequestParam(value = "page", defaultValue = "0") Integer page,
 			@RequestParam(value = "linesPerPage", defaultValue = "12") Integer linesPerPage,
@@ -44,7 +44,7 @@ public class ProductResource {
 
 	}
 	@GetMapping(value = "/{id}")
-	public ResponseEntity<ProductDTO> findById(@PathVariable long id){ /* webservice para responder todas as categorias por id */
+	public ResponseEntity<ProductDTO> findById(@PathVariable long id){
 		ProductDTO dto = service.findById(id);
 		return ResponseEntity.ok().body(dto);
 

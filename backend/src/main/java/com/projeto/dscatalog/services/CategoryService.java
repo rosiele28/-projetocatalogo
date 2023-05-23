@@ -1,7 +1,7 @@
 package com.projeto.dscatalog.services;
 
 
-import java.util.Optional;
+import java.util.Optional; 
 import java.util.stream.Collectors;
 
 import javax.persistence.EntityNotFoundException;
@@ -50,7 +50,7 @@ public class CategoryService {
 	}
 
 	@Transactional(readOnly = true)
-	public CategoryDTO update(long id, CategoryDTO dto) {
+	public CategoryDTO update(Long id, CategoryDTO dto) {
 		
 		try {
 		Category entity = repository.getReferenceById(id);

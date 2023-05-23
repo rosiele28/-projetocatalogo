@@ -2,7 +2,7 @@ package com.projeto.dscatalog.services;
 
 
 import java.util.Optional;
-import java.util.stream.Collectors;
+
 
 import javax.persistence.EntityNotFoundException;
 
@@ -14,9 +14,12 @@ import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import com.projeto.dscatalog.dto.CategoryDTO;
 import com.projeto.dscatalog.dto.ProductDTO;
+import com.projeto.dscatalog.entities.Category;
 import com.projeto.dscatalog.entities.Product;
 import com.projeto.dscatalog.repositories.ProductRepository;
+import com.projeto.dscatalog.repositories.CategoryRepository;
 import com.projeto.dscatalog.services.exceptions.DatabaseException;
 import com.projeto.dscatalog.services.exceptions.ResourceNotFoundException;
 
@@ -25,6 +28,9 @@ public class ProductService {
 
 	@Autowired
 	private ProductRepository repository;
+	
+	@Autowired
+	private CategoryRepository categoryRepository;
     
 	@Transactional(readOnly = true)
 	public Page<ProductDTO> findAllPaged(PageRequest pageRequest) {
@@ -36,7 +42,7 @@ public class ProductService {
 	@Transactional(readOnly = true)
 	public ProductDTO findById(long id) {
 		Optional<Product> obj = repository.findById(id);
-		Product entity = obj.orElseThrow(() -> new ResourceNotFoundException("Categoria não existe.")); 
+		Product entity = obj.orElseThrow(() -> new ResourceNotFoundException("Produto não existe.")); 
 		return new ProductDTO(entity, entity.getCategories());
 		
 	}
@@ -44,28 +50,29 @@ public class ProductService {
 	@Transactional(readOnly = true)
 	public ProductDTO insert(ProductDTO dto) {
 		Product entity = new Product();
-		//entity.setName(dto.getName());
+		copyDtoToEntity(dto, entity);
 		entity = repository.save(entity);
 		return new ProductDTO(entity);
 	}
 
+	
 	@Transactional(readOnly = true)
-	public ProductDTO update(long id, ProductDTO dto) {
+	public ProductDTO update(Long id, ProductDTO dto) {
 		
 		try {
 		Product entity = repository.getReferenceById(id);
-		//entity.setName(dto.getName());
+		copyDtoToEntity(dto, entity);
 		entity = repository.save(entity);
 		return new ProductDTO(entity);
 	}
 		catch(EntityNotFoundException e) {
-			throw new ResourceNotFoundException("Categoria não existe." + id);
+			throw new ResourceNotFoundException("Erro ao atualizar Produto" + id);
 		}
 	}
 	
 	
 	
-	public void delete(long id) {
+	public void delete(Long id) {
 		try {
 		repository.deleteById(id);
 		} catch (EmptyResultDataAccessException e ){
@@ -76,5 +83,20 @@ public class ProductService {
 		}
 		
 	}
-
+	
+	private void copyDtoToEntity(ProductDTO dto, Product entity) {
+		entity.setName(dto.getName());
+		entity.setDescription(dto.getDescription());
+		entity.setDate(dto.getDate());
+		entity.setImgUrl(dto.getImgUrl());
+		entity.setPrice(dto.getPrice());
+		
+		entity.getCategories().clear();
+		
+		for(CategoryDTO catDto : dto.getCategories()) {
+			Category category = categoryRepository.getReferenceById(catDto.getId());
+			entity.getCategories().add(category);
+			
+		}
+	}
 }
